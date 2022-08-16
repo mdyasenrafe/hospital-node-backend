@@ -63,7 +63,11 @@ exports.loginUser = async (req, res) => {
       res.status(400).json({ error: true, message: err });
     } else {
       if (data?.email) {
-        if (req.body.password === data.password) {
+        const checkHashedPassword = bcrypt.compare(
+          req?.body?.password,
+          data?.password
+        );
+        if (checkHashedPassword) {
           res.status(200).json({
             status: 200,
             error: false,
