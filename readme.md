@@ -10,7 +10,7 @@ if you want to run this project locally then follow the steps below.
 
 or you can also run this project on heroku by clicking on the link below.
 
-[https://hospital-backend-task.herokuapp.com/](https://hospital-backend-task.herokuapp.com/)
+[https://hospitalbackendnode.herokuapp.com](https://hospital-backend-task.herokuapp.com/)
 
 ## API Endpoints
 
