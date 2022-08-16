@@ -4,9 +4,12 @@ This is Hospital backend task.It is built using Node and Express Framework and M
 
 if you want to run this project locally then follow the steps below.
 
+```bash
 1. Clone the repository
 2. Run `npm install` to install all the dependencies
 3. Run `npm run dev` to start the server
+
+```
 
 or you can also run this project on heroku by clicking on the link below.
 
