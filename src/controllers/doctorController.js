@@ -45,7 +45,6 @@ exports.getDoctor = async (req, res) => {
           });
         }
         pattern.totalPatientsCount = totalPatientsCount;
-        console.log(pattern);
         res.status(200).json({
           error: false,
           data: pattern,
