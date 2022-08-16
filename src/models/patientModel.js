@@ -5,7 +5,7 @@ const ProfileSchema = new Schema({
   email: {
     type: String,
     required: true,
-    // unique: true,
+    unique: true,
   },
   name: {
     type: String,
@@ -20,7 +20,6 @@ const ProfileSchema = new Schema({
   address: {
     type: String,
     required: true,
-    // add error message for minlength
     minlength: [10, "Address must be at least 10 characters"],
   },
   phoneNumber: {

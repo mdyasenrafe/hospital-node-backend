@@ -39,6 +39,7 @@ app.all("*", function (req, res, next) {
 
 // routing
 app.use("/login", require("./src/routes/patientRoute"));
+app.use("/psychiatrist", require("./src/routes/doctorRoute"));
 
 app.get("/", (req, res) => {
   res.send("This is Todo server");
