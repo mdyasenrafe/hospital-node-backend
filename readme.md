@@ -15,6 +15,10 @@ or you can also run this project on heroku by clicking on the link below.
 
 [https://hospitalbackendnode.herokuapp.com](https://hospital-backend-task.herokuapp.com/)
 
+<!-- postman collection -->
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/20272416-922332cd-3be7-4c12-9b3e-98fda6c82a2d?action=collection%2Ffork&collection-url=entityId%3D20272416-922332cd-3be7-4c12-9b3e-98fda6c82a2d%26entityType%3Dcollection%26workspaceId%3Da8d9c278-9242-4b03-9370-2b3f3e82367f)
+
 ## API Endpoints
 
 1. `POST /login/registration` - Create a patient
