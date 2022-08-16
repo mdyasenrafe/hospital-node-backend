@@ -6,7 +6,7 @@ const { phone } = require("phone");
 exports.registrationUser = async (req, res) => {
   let password = req?.body?.password;
   let hashedPassword;
-  let pattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!.* ).{8,16}$/;
+  let pattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!.* ).{8,15}$/;
   let passwordValidation = pattern.test(password);
   if (passwordValidation) {
     hashedPassword = await bcrypt.hash(password, 10);
@@ -19,7 +19,7 @@ exports.registrationUser = async (req, res) => {
       if (!passwordValidation) {
         res.status(400).json({
           message:
-            "password must be contain at least one uppercase letter, one lowercase letter, one number",
+            "password must be contain at least one uppercase letter, one lowercase letter, one number and must be 8 value and less than 15 value",
         });
       } else {
         req.body.password = hashedPassword;

@@ -14,8 +14,6 @@ const ProfileSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: [8, "Password must be at least 8 value"],
-    maxLength: [15, "Password less than 15 value"],
   },
   address: {
     type: String,
